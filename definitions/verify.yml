@@ -395,6 +395,7 @@ paths:
 
       parameters:
         - $ref: '#/components/parameters/format'
+        - $ref: '#/components/parameters/api_secret'
         - name: number
           required: true
           in: query
