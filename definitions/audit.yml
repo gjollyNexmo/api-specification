@@ -17,10 +17,10 @@ info:
     url: 'https://opensource.org/licenses/MIT'
 
 servers:
-  - url: https://api.nexmo.com/beta/audit/events
+  - url: https://api.nexmo.com/beta/audit
 
 paths:
-  '/':
+  '/events':
     get:
       operationId: getEvents
       summary: Retrieve audit events
@@ -128,7 +128,7 @@ paths:
 
 
   # GET event
-  '/{id}':
+  '/events/{id}':
     get:
       operationId: getEvent
       summary: Retrieve individual audit event

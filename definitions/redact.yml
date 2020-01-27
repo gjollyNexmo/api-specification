@@ -9,9 +9,9 @@ info:
     email: devrel@nexmo.com
     url: "https://developer.nexmo.com/"
 servers:
-  - url: https://api.nexmo.com/v1/redact/transaction
+  - url: https://api.nexmo.com/v1/redact
 paths:
-  /:
+  /transaction:
     post:
       summary: Redact a specific message
       operationId: redact-message
