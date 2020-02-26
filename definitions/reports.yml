@@ -22,6 +22,30 @@ info:
 servers:
   - url: https://api.nexmo.com
 paths:
+  "/v2/reports/records":
+    get:
+      operationId: search-records
+      summary: Fetch records synchronously
+      description: Request your account activity synchronously
+      security:
+        - bearerAuth: []
+        - basicAuth: []
+      parameters:
+        - name: product
+          description: The account for which the list of reports will be queried.
+          in: query
+          example: SMS
+          required: true
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  foo:
+                    example: bar
   "/v2/reports":
     post:
       operationId: create-report
