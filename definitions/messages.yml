@@ -115,6 +115,7 @@ paths:
                                 type: string
                                 description: Additional text to accompany the file.
                                 example: Additional text.
+
                       - $ref: '#/components/schemas/channelOptionsWhatsapp'
                     - allOf:
                       - $ref: '#/components/requestBodies/File'
